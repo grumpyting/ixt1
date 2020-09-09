@@ -27,6 +27,13 @@
     background: beige;
     order: 2;
   }
+
+  #flex-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+
   header, footer {
     background: yellowgreen;
     height: 10vh;
