@@ -45,6 +45,19 @@
   figure{
     margin: 0px;
   }
+  nav{
+
+  }
+  ul{
+    border-left: solid black 1px;
+    list-style-type: none;
+    position: fixed;
+    padding-left: 0;
+  }
+
+  li{
+
+  }
 
   img{
     max-width: 100%;
