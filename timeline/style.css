@@ -41,7 +41,9 @@
   header, footer, article, nav, aside {
     padding: 1em;
   }
-
+  header{
+    background-color: #B9BABC;
+  }
   figure{
     margin: 0px;
   }
@@ -55,22 +57,36 @@
     padding-left: 0;
   }
 
-  li{
-
+  article{
+    background-color: #77777780;
+    min-xheight: 100%;
   }
 
   img{
     max-width: 100%;
   }
 
+  p{
+    background-color: #77777780;
+    color: white;
+    border-radius: 6px;
+    padding: 1px 1px 1px 4px;
+  }
+
   @media only screen and (min-width: 568px) {
-     body { background-color: blue; }
+     body { background-color: blue;
+     }
+     p{
+      font-size: 16pt;
+     }
   }
 
   @media only screen and (min-width: 1024px) {
-    body { background-color: green; }
-  }
+    body { background-color: green;
+    }
+   }
 
   @media only screen and (min-width: 1200px) {
-    body { background-color: pink; }
+    body{ background-color: pink;
+    }
   }
