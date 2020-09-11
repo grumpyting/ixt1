@@ -1,7 +1,8 @@
-  * {
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+   * {
     box-sizing: border-box;
     scroll-behavior: smooth;
-
+    font-family: 'Roboto', sans-serif;
   }
   body {
     display: flex;
@@ -38,7 +39,7 @@
     height: 10vh;
     width: 100%;
   }
-  header, footer, article, nav, aside {
+  header, footer, article, nav{
     padding: 1em;
   }
   header{
@@ -48,10 +49,10 @@
     margin: 0px;
   }
   nav{
-
+    line-height: 3em;
   }
   ul{
-    border-left: solid black 1px;
+    border-right: solid black 1px;
     list-style-type: none;
     position: fixed;
     padding-left: 0;
@@ -59,7 +60,6 @@
 
   article{
     background-color: #77777780;
-    min-xheight: 100%;
   }
 
   img{
