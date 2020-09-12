@@ -47,14 +47,19 @@
     padding: 1em;
   }
   header{
-    background-color: #B9BABC;
+    background-image: url(images/header.jpg);
+    background-position: center top;
+    background-size: 100%;
+    max-height: 6em;
   }
 
   footer{
     justify-content: center;
     display: flex;
     align-items: center;
+    background-image: url(images/footer.jpg);
   }
+
 
   h1{
     padding: 0;
@@ -89,12 +94,8 @@
     font-size: 16pt;
   }
 
-  article{
-    background-color: #77777780;
-  }
-
   img{
-    max-width: 100%;
+    max-width: 80%;
     border-radius: 6px;
     box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.25);
 
@@ -103,6 +104,7 @@
   p{
     background-color: #77777780;
     color: white;
+    max-width: 80%;
     font-size: 10pt;
     border-radius: 6px;
     padding: 1px 1px 1px 4px;
@@ -118,12 +120,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
   }
 
   @media only screen and (min-width: 568px) {
-    body {
-        background-color: blue;
+     nav{
+      max-width: 15%;
      }
      h1{
       font-size: 24pt;
@@ -135,26 +136,43 @@
       font-size: 16pt;
      }
      a:hover{
-      font-size: 20pt;
+      font-size: 22pt;
      }
   }
 
   @media only screen and (min-width: 1024px) {
-    body {
-      background-color: green;
+    .content-flex-container{
+      display: flex;
+    }
+    .content-flex-container p{
+      margin: 0px 20px 20px 20px;
+      width: 40%;
+    }
+    img{
+      max-width: 450px;
+    }
+    nav{
+      max-width: 10%;
+      line-height: 5em;
+    }
+    h1{
+      font-size: 30pt;
+    }
+    h2{
+      font-size:  26pt;
+    }
+    a,p{
+      font-size: 16pt;
+    }
+    a:hover{
+      font-size: 20pt;
     }
 
-    #flex-container{
-      flex-wrap: wrap;
-      
-    }
-
-    article{
-     flex:;
-    }
-   }
+}
 
   @media only screen and (min-width: 1200px) {
-    body{ background-color: pink;
+    nav{
+      max-width: 10%;
     }
+
   }
