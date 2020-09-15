@@ -169,7 +169,16 @@
 
   @media only screen and (min-width: 1200px) {
     nav{
-      max-width: 10%;
+      max-width: 11%;
+    }
+    a,p{
+      font-size: 18pt;
+    }
+    a:hover{
+      font-size: 22pt;
+    }
+    img{
+      max-width: 550px;
     }
 
   }
