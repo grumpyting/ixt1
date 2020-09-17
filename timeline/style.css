@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/*roboto font linken*/
    * {
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /*scroll van nav smooth maken*/
     font-family: 'Roboto', sans-serif;
+
   }
   body {
     display: flex;
-    min-height: 100vh;
+    min-height: 100vh; /*grootte ter waarde van 1% van de viewport. hier dus 100%*/
     flex-direction: column;
     margin: 0;
     background-color: #fdfdfd;
     background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2397d8d8' fill-opacity='0.45'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    /*achtergrond afbeelding toevoegen*/
   }
   #main {
     display: flex;
@@ -18,7 +21,7 @@
   }
   #main > article {
     flex: 1;
-    order: 1;
+    order: 1; /*volgorde van de items*/
   }
   #main > nav, 
   #main > aside {
@@ -27,21 +30,20 @@
   #main > nav {
     order: 3;
   }
-  #main > aside {
-    order: 2;
-  }
 
   #flex-container{
     display: flex;
     flex-direction: column;
     padding: 0;
   }
+/*flex container zorgt dat alle elements erin nog in een colomn blijven en responsive*/
+
   header, footer {
-    height: 10vh;
+    height: 10vh; /*header en footer hebben een height van 10% relatief van de viewport*/
     width: 100%;
   }
   header, footer, article, nav{
-    padding: 1em;
+    padding: 1em; /*padding waarvan de size relatief is van de font size*/
   }
   header{
     background-image: url(images/header.jpg);
@@ -51,7 +53,7 @@
   }
 
   footer{
-    justify-content: center;
+    justify-content: center; /*content midden zetten*/
     display: flex;
     align-items: center;
     background-image: url(images/footer.jpg);
@@ -76,9 +78,9 @@
     line-height: 3.5em;
   }
   ul{
-    border-right: solid black 1px;
+    border-right: solid black 1px; /*rechterlijn van de tijdlijn*/
     list-style-type: none;
-    position: fixed;
+    position: fixed; /*scrollt mee met het scherm*/
     padding-left: 0;
   }
 
@@ -88,13 +90,13 @@
   }
 
   a:hover, a:active{
-    font-size: 16pt;
+    font-size: 16pt; /*op hover en active wordt de font groter*/
   }
 
   img{
-    max-width: 80%;
+    max-width: 80%; /*niet groter dan 80%*/
     border-radius: 6px;
-    box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.25);
+    box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.25); /*kleine schaduw toevoegen*/
 
   }
 
