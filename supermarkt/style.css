@@ -6,12 +6,17 @@
     font-family: 'Roboto', sans-serif;
 }
 
-header,main,footer,aside{
+body{
+  min-height: 100vh; /*grootte ter waarde van 1% van de viewport. hier dus 100%*/
+}
+
+header,main,footer,nav{
   background-color: #444;
   color: #fff;
   border-radius: 5px;
   padding: 10px;
   font-size: 150%;
+  width: 100%;
 }
 
 .wrapper {
@@ -19,19 +24,20 @@ header,main,footer,aside{
   grid-gap: 10px;
   grid-template-columns: 120px 120px 120px;
   grid-template-areas:
-  ". header header"
-  "aside main main"
+  "nav nav nav"
+  "header header header"
+  "main main main"
   "footer  footer  footer";
   background-color: #fff;
   color: #444;
 }
-
-.aside {
-        grid-area: aside;
+/*benamingen van de "blokken"*/
+nav {
+        grid-area: nav;
     }
 
-.content {
-        grid-area: content;
+main {
+        grid-area: main;
 }
 
 header {
@@ -45,6 +51,75 @@ footer {
 
 .header, .footer {
   background-color: #999;
+}
+
+figure{
+  margin: 0;
+}
+
+#logo{
+  width: 48px;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+}
+
+.overlay > label {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    top: 30px;
+    left: 200px;
+    width: 30px;
+    height: 16px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+.overlay > label::before {
+    content: '';
+    display: block;
+    position: relative;
+    top: 7px;
+    border-top: 2px solid #000;
+}
+
+.verticalNav {
+    color: #333;
+    position: relative;
+    top: -55px;
+    height: 135px;
+    padding: 20px;
+    padding-left: 130px;
+    font-size: 22px;
+    box-sizing: border-box;
+    background-color: #ddd;
+    transition: top 600ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+}
+
+.verticalNav a {
+    display: block;
+    color: #111;
+    text-decoration: none;
+}
+
+.verticalNav a:hover {
+    width: 120px;
+    background-color: #fff;
+}
+
+#toggle {
+    position: absolute;
+    visibility: hidden;
+}
+
+#toggle:checked ~ .verticalNav {
+    top: 80px;
 }
 
 @media screen and (min-width: 568px) {
