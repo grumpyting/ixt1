@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/*roboto font linken*/
+   * {
+    box-sizing: border-box;
+    scroll-behavior: smooth; /*scroll van nav smooth maken*/
+    font-family: 'Roboto', sans-serif;
+}
+
+header,main,footer,aside{
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 150%;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 120px 120px 120px;
+  grid-template-areas:
+  ". header header"
+  "aside main main"
+  "footer  footer  footer";
+  background-color: #fff;
+  color: #444;
+}
+
+.aside {
+        grid-area: aside;
+    }
+
+.content {
+        grid-area: content;
+}
+
+header {
+        grid-area: header;
+}
+
+footer {
+        grid-area: footer;
+}
+
+
+.header, .footer {
+  background-color: #999;
+}
+
+@media screen and (min-width: 568px) {
+
+}
+@media only screen and (min-width: 1024px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
