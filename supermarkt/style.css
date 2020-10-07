@@ -51,17 +51,31 @@ footer {
 nav{
   margin:0;
   max-height: 50px;
-  background-image: url("https://media.s-bol.com/Yo445Oqz1GW/550x491.jpg");
+}
+
+p{
+  margin: 0;
+  font-size: 16px;
+  background-color: #444;
 }
 
 figure{
-  margin: 0;
+  margin: -1px;
 }
 
 header{
   background-image: url(images/header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+img{
+  max-width: 100%;
+}
+
+.boodschappen{
+  max-width: 115px;
+  max-height: 115px;
 }
 
 #logo{
