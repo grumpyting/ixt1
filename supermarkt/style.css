@@ -73,6 +73,11 @@ img{
   max-width: 100%;
 }
 
+footer > p{
+  max-width: 115px;
+  margin:0;
+}
+
 .boodschappen{
   max-width: 115px;
   max-height: 115px;
