@@ -1,50 +1,218 @@
 <!DOCTYPE html>
+<html> 
 	<head>
-		<title>Buurtsuper</title>
-    	<link rel="stylesheet" href="style.css">
-    	<meta charset="utf-8"/>
-    	<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charset="utf-8">
+		<title>Buurtsuper Leo</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
 	</head>
- 	<body class="wrapper">
-    	<nav>
-    		<div class="overlay">
-    		    <label for="toggle"></label>
-    		</div>
-    		<input type="checkbox" id="toggle" name="toggle">
-    		<div class="verticalNav">
-    	    	<a href="#">Home</a>
-    	    	<a href="#">Producten</a>
-    	    	<a href="#">Contact</a>
-    		</div>
-    	</nav>
-    	<header>
-    		<figure>
-    			<img id="logo" src="images/logo_kleur.svg" alt="logo Buurtsuper">
-    		</figure>
-    		<p>Bij Buurtsuper Leo v.d. Drift bent u aan het juiste adres als het gaat om verse producten.
-    		</p>
-    	</header>
-    	<main>
-    		<figure>
-    			<img class="boodschappen" src="images/veg.jpg">
-    			<img class="boodschappen" src="images/fruit.jpg">
-    			<img class="boodschappen" src="images/vlees.jpg">
-    		</figure>
-    	</main>
-    <footer>
-    	<p>
-    	BUURTSUPERMARKT
-    	Leo van der Drift
-    	Linnaeusstraat 175
-    	</p>
-    	<p>
-    	Maandag t/m Vrijdag van:
-    	7.30 tot 19.00 uur
-    	Zaterdag van:
-    	7.30 tot 17.00 uur
-    	Zondag van:
-    	10.00 tot 17.00 uur
-    	</p>
-    </footer>
-  </body>
+
+	<body>
+		<div class="container">
+			<header>
+				<nav>
+					<a id="menu" href="#"><img src="img/menu.svg"></a>
+					<a id="logo" href=#><img src="img/logo.svg"></a>
+					<ul class="desktop-nav">
+						<li><a href="#">assortiment</a></li>
+						<li><a href="#">aanbiedingen</a></li>
+						<li><a href="#">maaltijdpakketen</a></li>
+						<li><a href="#">zakelijk bestellen</a></li>
+						<li><a href="#">over ons</a></li>
+					</ul>
+					
+					<div class="menu-item">
+						<a href="#"><img id ="search-icon" src="img/search.svg"></a>
+						<a href="#"><img id="cart-icon" src="img/cart.svg"></a>
+					</div>
+				</nav>	 
+			</header>
+
+			<main>
+				<div class="hero-banner">
+					<h2>Met trots presenteren wij u onze geheel vernieuwde website!</h2>
+				</div>
+
+				<h2>Week aanbiedingen</h2>
+
+				<div class="article-wrapper">
+					<article>
+						<div class="article-container">
+							<figure><img src="img/brood.jpg" alt="dit is een foto van gesneden bruin brood op een serveerplank"></figure>
+							<h3>Vers brood uit de oven</h3>
+							<div class="h-line"></div>
+							<div class="price"><strong>1</strong>.20</div>
+							<div class="perStuk">per stuk</div>
+							<div class="addItem"> <img src="img/add.svg" alt="dit is een groene icon met een plus teken"></div>
+						</div>
+					</article>
+
+					<article>
+						<div class="article-container">
+							<figure><img src="img/brood2.jpg" alt="dit is een foto van een witte pistolet"></figure>
+							<header><h3>Pistolet van de bakker</h3></header>
+							<div class="h-line"></div>
+							<div class="price"><strong>1</strong>.50</div>
+							<div class="perStuk">per stuk</div>
+							<div class="addItem"> <img src="img/add.svg"> </div>
+						</div>
+					</article>
+
+					<article>
+						<div class="article-container">
+							<figure><img src="img/beleg.jpg" alt="dit is een foto van een gesneden kipfilet plak"></figure>
+							<h3>Vers gesneden beleg</h3>
+							<div class="h-line"></div>
+							<div class="price"><strong>1</strong>.20</div>
+							<div class="perStuk">per stuk</div>
+							<div class="addItem"> <img src="img/add.svg"> </div>
+						</div>
+					</article>   
+
+					<article>
+						<div class="article-container">
+							<figure><img src="img/appel.jpg" alt="dit is een foto van drie rode appels"></figure>
+							<h3>Zoete appels</h3>
+							<div class="h-line"></div>
+							<div class="price"><strong>1</strong>.20</div>
+							<div class="perStuk">per stuk</div>
+							<div class="addItem"> <img src="img/add.svg"> </div>
+						</div>
+					</article>
+
+					<article>
+						<div class="article-container">
+							<figure><img src="img/banaan.jpg" alt="dit is een foto van een tros gele bananen"></figure>
+							<h3>Verse bananen</h3>
+							<div class="h-line"></div>
+							<div class="price"><strong>1</strong>.20</div>
+							<div class="perStuk">per stuk</div>
+							<div class="addItem"> <img src="img/add.svg"> </div>
+						</div>
+					</article>
+
+					<article>
+						<div class="article-container">
+							<figure><img src="img/ham.jpg" alt="dit is een foto van een gesneden plak">
+							<h3>Vers belegen ham</h3>
+							<div class="h-line"></div>
+							<div class="price"><strong>1</strong>.20</div>
+							<div class="perStuk">per stuk</div>
+							<div class="addItem"> <img src="img/add.svg"> </div>
+							</div>
+					</article>
+				</div>
+
+
+				<div class="banner-wrapper">
+					<div class = banner-text>
+						<h3>Heropeningsactie</h3>
+						<p>Tijdelijk gratis bezorging op je boodschappen</p>
+					</div>
+				</div>
+
+				<div class= main-wrapper>
+					<div class="brood-banner">
+						<div class="aside-text">
+							<h2>Elke dag vers brood van de bakker</h2>
+							<p>Geniet elke dag van warme verse broodjes van Bakker Laurens Bosman</p>
+							<a href="#">meer informatie ></a>
+						</div>
+					</div>
+
+
+					<div class="beleg-banner">
+						<div class="aside-text">
+								<h2>Elke dag vers beleg gesneden van het mes </h2>
+								<p>Geniet van elke dag van vers gesneden beleg op je brood</p>
+								<a href="#">meer informatie ></a>
+						</div>
+					</div>
+
+					<div class="fruit-banner">
+						<div class="aside-text">
+								<h2>Elke dag vers stuk fruit bij het ontbijt & lunch </h2>
+								<p>Geniet van elke dag van vers gesneden beleg op je brood</p>
+								<a href="#">meer informatie ></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="banner-wrapper">
+					<div class = banner-text>
+						<h3>Kantoor en bedrijven</h3>
+						<p>Wij bezorgen ook aan kantoren en bedrijven binnen een straal van 5 km </p>
+					</div>
+				</div>
+
+				<div class="spar">
+					<img src= "img/spar.png">
+					<div class= spar-text>
+						<h3>Lid van Spar</h3>
+						<p>Buurtsuper Leo is lid van SPAR. Zo profiteert u van verse producten tegen betaalbare prijzen</p>
+					</div>
+				</div>
+			</main>
+
+			<footer>
+				<div class="footer-wrapper">
+					<ul id="mobile-list">
+						<li><a href="#">assortiment</a></li>
+						<li><a href="#">over ons</a></li>
+						<li><a href="#">kantoren en bedrijven</a></li>
+						<li><a href="#">service</a></li>
+					</ul>
+
+					<ul id="desktop-list">
+						<h4>sitemap</h4>
+						<li><a href="#">home</a></li>
+						<li><a href="#">assortiment</a></li>
+						<li><a href="#">aanbiedingen</a></li>
+						<li><a href="#">maaltijdpakketten</a></li>
+						<li><a href="#">zakelijk bestellen</a></li>
+						<li><a href="#">over ons</a></li>
+					</ul>
+				<div class="footer-line"></div>
+				
+				<ul class ="adres">
+					<li id="name">Buurtsuper Leo</li>
+					<li>Linnaeusstraat 175</li>
+					<li>E-mail: <a href="#">info@buurtsuperleovddrift.nl</a></li>
+					<li>Telefoon: (070) 4140891</li>
+				</ul>
+
+				<div class="footer-line"></div>
+					
+				<div class= "flex-wrapper">
+					<ul class ="openingstijden">
+						<li id="title">Openingstijden</li>
+						<li>Maandag</li> 
+						<li>Dinsdag</li>
+						<li>Woensdag</li>
+						<li>Donderdag</li>
+						<li>Vrijdag</li>
+						<li>Zaterdag</li>
+						<li>Zondag</li>
+					</ul>
+
+					<ul class="tijden">
+						<span>. </span>
+						<li>09.30 - 19.00</li>
+						<li>09.30 - 19.00</li>
+						<li>09.30 - 19.00</li>
+						<li>09.30 - 19.00</li>
+						<li>09.30 - 19.00</li>
+						<li>09.30 - 19.00</li>
+						<li>09.30 - 19.00</li>
+					</ul>
+				</div>
+
+
+				</div>
+				
+				
+			</div>
+				</div>
+			</footer>
+	</body>
 </html>
