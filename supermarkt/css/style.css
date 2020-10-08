@@ -39,6 +39,12 @@ header{
 	color: #333;
 	font-weight: 500;
 }
+
+#logo{
+	width: 10%;
+	max-width:85px; 
+}
+
 /*CSS ANIMATIONS*/
 
 #search-icon, #cart-icon{
@@ -88,7 +94,7 @@ footer ul{
 	list-style: none;
 	font-size: 16px;
 	font-weight: 400;
-	margin:40px 0 40px 0 ;
+	margin:20px 0 20px 0 ;
 }
 
 footer li > a{
@@ -183,8 +189,8 @@ nav{
 	margin-left: 10px;
 }
 
-/*HERO-BANNER*/
-.hero-banner h2{
+/*main-BANNER*/
+.main-banner h2{
    color:white;
    font-weight: 500;
    font-size: 16px;
@@ -194,7 +200,7 @@ nav{
    padding: 10%;
 }
 
-.hero-banner{
+.main-banner{
 	background-image: url(../img/banner.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;	
@@ -204,6 +210,7 @@ nav{
 main h2{
 	display: flex;
     justify-content: center;
+
 }
 
 article{
@@ -282,14 +289,17 @@ article{
 	height: 225px;
 	margin: 2em 0 2em 0;
 	width: 100%
+
 }
 
 .brood-banner{
 	background-image: url(../img/brood-banner.jpg);
+
 }
 
 .beleg-banner{
 	background-image: url(../img/beleg-banner.jpg);
+
 }
 
 .fruit-banner{
@@ -298,34 +308,29 @@ article{
 }
 
 .aside-text {
-   color:white;
+   color:black;
    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
    width: 60%;
    margin: 0 auto;
    padding: 10px;
 }
 
-.aside-text h2{
-	font-size: 22px;
-	font-weight: 700;
-	width: 200px;
-}
 
-.aside-text p{
-	font-size:16px;
-	font-weight: 400;
-	margin-bottom:1em;
-}
 
 .aside-text a{
-	color: white;
+	color: black;
 	text-decoration: none;
 }
+
+.aside-text a:hover{
+	color: white;	
+}
+
 
 /*GREEN- BANNER*/
 .banner-wrapper{
 	background-color: #87D0B5;
-	height: 135px;
+	height: 10px;
 	padding: 5px;
 	margin: 0 auto;
 }	
@@ -371,13 +376,13 @@ article{
 	width:20px;
 }
 
-/*HERO-BANNER*/
-.hero-banner h2{
+/*main-BANNER*/
+.main-banner h2{
    font-size: 26px;
    width: 60%;
 }
 
-.hero-banner{
+.main-banner{
 	background-size: cover;	
 }
 
@@ -466,7 +471,7 @@ nav{
 }
 
 
-.hero-banner h2{
+.main-banner h2{
 	font-size: 32px;
 }
 
@@ -553,7 +558,7 @@ main h2{
 @media only screen and (min-width: 1200px){
 
 
-.hero-banner h2 {
+.main-banner h2 {
 	font-size: 36px;	
  }
 
