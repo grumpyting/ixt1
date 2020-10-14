@@ -110,18 +110,6 @@ footer li{
 	color:white;
 }
 
-.social-media{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	margin: 45px 0 45px 0;
-}
-
-.social-media a > img{
-	width: 35px;
-	margin: 0.5em;
-}
-
 /*RESPONSIVE SCHERM , 320 PX, MOBILE*/
 @media only screen and (min-width: 320px){
 
@@ -172,32 +160,6 @@ nav{
 	background-size: cover;	
 	}
 
-/*STYLING WEEKAANBIEDINGEN*/
-main h2{
-	display: flex;
-    justify-content: center;
-
-}
-
-article{
-	display: flex;
-	justify-content: center;
-	flex-direction: row;
-	margin: 25px;
-}
-
-/*ARTICLE BOX STYLING*/
-.article-container{
-	padding: 20px;
-	flex-direction: column;
-	background: #FFFFFF;
-	border: 1px solid #FFFFFF;
-	box-sizing: border-box;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	height: minmax(175 auto);
-	width:250px;
-	}
-
 /*BANNER*/
 .brood-banner , .beleg-banner, .fruit-banner{
 	background-repeat: no-repeat;
@@ -222,26 +184,6 @@ article{
 	background-image: url(../img/fruit-banner.jpg);
 	
 }
-
-.banner-text {
-   color:black;
-   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-   width: 60%;
-   margin: 0 auto;
-   padding: 10px;
-}
-
-
-
-.banner-text a{
-	color: black;
-	text-decoration: none;
-}
-
-.banner-text a:hover{
-	color: white;	
-}
-
 
 /*GREEN- BANNER*/
 .banner-wrapper{
@@ -289,15 +231,6 @@ article{
 
 .main-banner{
 	background-size: cover;	
-}
-
-.article-wrapper{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin: 3em;
 }
 
 .spar{
@@ -362,24 +295,6 @@ nav{
 	flex-direction: row;
 }
 
-
-.main-banner h2{
-	font-size: 32px;
-}
-
-main h2{
-	font-size:26px;
-}
-
-.article-wrapper{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	max-width: 90%;
-	margin-bottom: 50px;
-}
-
 .brood-banner , .beleg-banner, .fruit-banner{
 	height: 300px;
     margin: 4em 1em 4em 1em;
@@ -427,18 +342,22 @@ main h2{
 
 
 @media only screen and (min-width: 1200px){
+	.spar-text{
+		font-size: 24px;
+	}
 
+	h2{
+		font-size: 32px;
+	}
 
-.main-banner h2 {
-	font-size: 36px;	
- }
+	.desktop-nav{
+		font-size: 20px;
+	}
 
-
-.article-wrapper{
-	max-width: 70%;
-	margin: 0 auto;
-	margin-bottom: 50px;
-}
-
-
+	#search-icon, #cart-icon{
+		width: 35px;
+	}
+	ul,li{
+		font-size: 20px;
+	}
 }
