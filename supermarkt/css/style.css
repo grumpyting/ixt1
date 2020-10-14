@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
-
-
 body{
 	font-family: roboto;
 	margin:0 auto;
 	overflow-x: hidden;
 }
-	
+	/*FR is dynamische getal die zich aanpast met de lege ruimtes van je flexboxes*/
 /*GRID-CONTAINER*/
 .container{
   display: grid;
@@ -44,38 +42,6 @@ header{
 	width: 10%;
 	max-width:85px; 
 }
-
-/*CSS ANIMATIONS*/
-
-#search-icon, #cart-icon{
-	transition: transform .2s;  
-	-ms-transform: scale(1); /* IE 9 */
-	-webkit-transform: scale(1); /* Safari 3-8 */
-	transform: scale(1); 
-}
-
-#search-icon:hover, #cart-icon:hover{
-	-ms-transform: scale(1.2); /* IE 9 */
-	-webkit-transform: scale(1.2); /* Safari 3-8 */
-	transform: scale(1.2)
-}
-
-.addItem img:hover {
-	animation: rotate-center 0.6s ease-in-out both;
-}
-
-@keyframes rotate-center {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}	
-
-
-
-
 
 /*MAIN*/
 main{
@@ -232,57 +198,7 @@ article{
 	width:250px;
 	}
 
-
-
-
-/*HORIZONTALE LIJN VAN ARTICLE BOX*/
-.h-line{
-	background-color: #F5821F;
-	width: 55px;
-	height: 3px;
-}
-
-/*PRODUCT IMAGE*/
-.article-container img{
-	display: flex;
-	justify-content: center;
-	width: 105px;
-	height: 105px;
-	margin: auto;
-}
-
-
-/*PRICE*/
-.article-container .price {
-	display: flex;
-	justify-content: flex-end;
-}
-
-/*PER STUK*/
-.article-container .perStuk{
-	display: flex;
-	justify-content: flex-end;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
-
-/*ADD-ITEM BUTTON*/
-.addItem{
-	display: flex;
-	justify-content: flex-end;
-	flex-direction: row;
-}
-
- .addItem img{
-	display:flex;
-	justify-content: flex-end;
-	width:25px;
-	height:25px;
-	margin: 0px;
-}
-
-/*BROOD-BANNER*/
+/*BANNER*/
 .brood-banner , .beleg-banner, .fruit-banner{
 	background-repeat: no-repeat;
 	background-size: cover;	
@@ -307,7 +223,7 @@ article{
 	
 }
 
-.aside-text {
+.banner-text {
    color:black;
    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
    width: 60%;
@@ -317,12 +233,12 @@ article{
 
 
 
-.aside-text a{
+.banner-text a{
 	color: black;
 	text-decoration: none;
 }
 
-.aside-text a:hover{
+.banner-text a:hover{
 	color: white;	
 }
 
@@ -334,17 +250,6 @@ article{
 	padding: 5px;
 	margin: 0 auto;
 }	
-
-.banner-text {
-   color:white;
-   width: 60%;
-   margin: 0 auto;
-   padding: 20px;
-}
-
-.banner-text h3, p{
-	margin: 0px;
-}
 
 .spar{
 	display: flex;
@@ -393,19 +298,6 @@ article{
 	flex-wrap: wrap;
 	justify-content: center;
 	margin: 3em;
-}
-
-.banner-text h3, p{
-	font-size: 20px;
-}
-
-.aside-text h2{
-	font-size: 26px;
-	width: 70%;
-}
-
-.aside-text p{
-	font-size:20px;
 }
 
 .spar{
@@ -488,30 +380,9 @@ main h2{
 	margin-bottom: 50px;
 }
 
-.banner-text h3, p{
-	font-size: 30px;
-}
-.banner-text p{
-	font-size:24px;
-}
-
 .brood-banner , .beleg-banner, .fruit-banner{
 	height: 300px;
     margin: 4em 1em 4em 1em;
-}
-
-.aside-text {
-	width: 80%;
-}
-	
-.aside-text h2{
-	font-size: 26px;
-	width: 85%;
-}
-
-.aside-text a{
-	color: white;
-	text-decoration: none;
 }
 
 .main-wrapper{
