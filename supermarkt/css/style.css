@@ -110,9 +110,6 @@ footer li{
 	color:white;
 }
 
-/*RESPONSIVE SCHERM , 320 PX, MOBILE*/
-@media only screen and (min-width: 320px){
-
 /*DESKTOP NAV VERBERGEN*/
 .desktop-nav{
 	display: none;
@@ -212,7 +209,7 @@ nav{
 .spar-text h3{
 	text-align: center;
 }
-}
+
 
 /*RESPONSIVE SCHERM , 768PX, TABLET*/
 @media only screen and (min-width: 768px){
