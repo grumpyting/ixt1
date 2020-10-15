@@ -45,6 +45,7 @@ header{
 
 /*MAIN*/
 main{
+	/*grid "blokken indelen"*/
 	grid-area:main;
 }
 
